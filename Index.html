@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina WEB</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <!-- Sección encabezado -->
+    <header class="header">
+        <a href="Index.html" class="logo"><img src="imagen/logo.png"></a>
+        <h1>HELADOS MOMENTOS</h1>
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="quienessomos.html">Quienes Somos</a></li>
+                <li><a href="productos.html">Catalogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección de contenido principal-->
+    <main>
+        <!-- Sección de la empresa -->
+        <section id="empresa" class="columnas">
+            <div class="izquierda">
+                <img src="logo2.png" width="250" height="250"/> <alt="quienes_somos">
+            </div>
+            <div class="derecha">
+                <h2>Nuestra Empresa</h2>
+                <p>En HELADOS MOMENTOS, nos dedicamos a ofrecer paletas de hielo deliciosas, elaboradas con ingredientes frescos y naturales, buscando brindar una experiencia refrescante y saludable para nuestros clientes.</p>    
+            </div>
+        </section>
+
+        <!-- Sección de Promociones -->
+        <section id="promocion">
+            <h2>PROMOCIONES</h2>
+            <div class="catalogo">
+                <!-- promocion 1 -->
+                <div class="producto">
+                    <img src="tricolor.jpg" alt="Producto 1">
+                    <div class="producto-info">
+                        <h2>Paleta de 3 sabores</h2>
+                        <p>Paleta de 3 sabores (limon, mango y sandia)</p>
+                    </div>
+                </div>
+                <!-- promocion 2 -->
+                <div class="producto">
+                    <img src="fresa.jpg" alt="Producto 2">
+                    <div class="producto-info">
+                        <h2>Paleta de fresa</h2>
+                        <p>Paleta sabor fresa refrescante en cada mordida</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de Servicios y Precios -->
+        <section id="servicios" class="columnas">
+            <div class="izquierda">
+                <h2>Paletas de sabor</h2>
+                <ul>
+                    <li>Fresa y Limon</li>
+                    <li>Sandia</li>
+                    <li>Wiki</li>
+                    <li>Chocolate y vainilla</li>
+                    <li>Y mas...</li>
+                    <!-- Agregar más servicios según sea necesario -->
+                </ul>
+            </div>
+            <div class="derecha">
+                <img src="portada.jpg" width="350" heigth="500" alt="Servicio">
+            </div>
+        </section>
+
+<!-- Sección de Video -->
+<section id="video">
+    <h2>CONOCE NUESTRO PROCESO DE ELABORACION DE NUESTRO PRODUCTO</h2>
+    <video width="600" controls>
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+    </video>
+</section>
+
+        <!-- Sección de Marcas -->
+        <section id="marcas">
+            <h2>Nuestra Marca</h2>
+            <div class="brands">
+                <img src="marca.png" alt="Marca 1">
+            
+            </div>
+        </section>
+    </main>
+
+    <!-- Sección de Pie de pagina -->
+    <footer>
+        <p>&copy; 2025 Heladas Momentos. Todos los derechos reservados.</p>
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/share/19Q1DBU81U/?mibextid=wwXIfr" target="_blank">Facebook</a> |
+            <a href="https://x.com/momentoshelados?s=11" target="_blank">Twitter</a> |
+            <a href="https://www.instagram.com/heladosmomentos?igsh=MXE1cGc2MW5hZ3RyYw%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+        </div>
+        <p>Contacto: heladosmomentos@gmail.com</p>
+    </footer>
+
+    <!-- script Codigo de JavaScript -->
+    <script>
+        // Función para mostrar u ocultar el menú en móviles
+        function toggleMenu() {
+          const menu = document.getElementById("menu");
+          menu.classList.toggle("responsive");
+        }
+      </script>
+</body>
+</html>

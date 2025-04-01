@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de la Empresa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer>
+        function toggleMenu() {
+            const menu = document.getElementById("menu");
+            menu.classList.toggle("activo");
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header class="header">
+        <a href="index.html" class="logo"><img src="imagen/logo.png"  <alt="Logo de la empresa"></a>
+        <h1>HELADOS MOMENTOS</h1>
+
+        <!-- Menú de navegación -->
+        <nav class="navbar">
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienessomos.html">Quienes Somos</a></li>
+                <li><a href="productos.html">Catalogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de la empresa -->
+    <main>
+        <section id="empresa" class="contenedor">
+            <div class="izquierda">
+                <img src="somos.png" width="300" height="300"/> <alt="Imagen de la empresa">
+            </div>
+            <div class="derecha">
+                <h2>Sobre Nosotros</h2>
+                <p>En <strong>HELADOS MOMENTOS</strong>, <p> Nos dedicamos a ofrecer paletas de hielo artesanales y deliciosas, elaboradas con ingredientes frescos y naturales, buscando brindar una experiencia refrescante y saludable para nuestros clientes.</p>
+            </div>
+        </section>
+
+        <!-- Misión, Visión y Valores -->
+        <section id="info-empresa">
+            <div class="info-box">
+                <h2>Mision</h2>
+                <p>Ofrecer una experiencia refrescante y deliciosa a nuestros clientes, brindando paletas de hielo deliciosas elaboradas con ingredientes naturales y frescos. Nos comprometemos a crear momentos de disfrute y sabor, promoviendo un estilo de vida saludable y responsable con el medio ambiente.</p>
+            </div>
+            <div class="info-box">
+                <h2>Vision</h2>
+                <p>Ser la marca lider en el mercado de paletas de hielo, reconocida por su innovacion, calidad y compromiso con la sostenibilidad. Queremos llevar momentos de frescura y felicidad a cada rincon, ofreciendo una opcion deliciosa, saludable y accesible para todos.</p>
+            </div>
+            <div class="info-box">
+                <h2>Valores</h2>
+                <ul>
+                    <li>Calidad</li>
+                    <li>Sostenibilidad</li>
+                    <li>Innovacion</li>
+                    <li>Salud</li>
+                    <li>Diversion</li>
+                    <li>Compromiso</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Helados Momentos. Todos los derechos reservados.</p>
+        <p>Contacto: heladosmomentos@gmail.com</p>
+    </footer>
+
+</body>
+</html>
